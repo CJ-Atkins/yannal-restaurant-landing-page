@@ -1,0 +1,94 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+  z-index: 1;
+}
+
+.navbar-logo img {
+  max-width: 100px;
+}
+
+.navbar-menu {
+  display: flex;
+}
+
+.navbar-menu p {
+  margin: 0 1.2rem;
+  font-family: var(--font-main);
+  color: var(--color-main);
+  font-weight: 500;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  margin-left: 1.5rem;
+}
+
+.navbar-responive-menu__button {
+  display: none;
+  margin-left: 1.5rem;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  height: 24px;
+  width: 24px;
+}
+
+.navbar-responsive-menu {
+  display: none;
+  position: absolute;
+  right: 3rem;
+  top: 5rem;
+  z-index: 1;
+  background-color: #fff;
+  padding: 0 1rem;
+}
+
+.navbar-responsive-menu p {
+  font-family: var(--font-main);
+  color: var(--color-main);
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .navbar {
+    padding: 2rem 4rem;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-responive-menu__button {
+    display: block;
+  }
+
+  .navbar-responsive-menu {
+    display: block;
+  }
+
+  .navbar-links a {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    padding: 1.5rem;
+  }
+
+  .navbar-responsive-menu {
+    top: 4rem;
+    right: 0rem;
+  }
+}
