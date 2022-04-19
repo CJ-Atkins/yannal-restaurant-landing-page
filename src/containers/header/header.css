@@ -23,6 +23,7 @@
 
 .header-content__item {
   display: flex;
+  position: relative;
 }
 
 .header-content__item h1 {
@@ -35,13 +36,15 @@
 }
 
 .header-content__item h3 {
-  transform: rotate(-90deg) translate(20px, 65px);
+  position: absolute;
+  transform: rotate(-90deg);
   font-family: var(--font-main);
   font-weight: 700;
   font-size: 55px;
-  line-height: 30px;
   letter-spacing: -0.08em;
   color: #d9d9d9;
+  left: 420px;
+  top: 25px;
 }
 
 .header-content p {
@@ -106,6 +109,7 @@
   width: 500px;
   height: 250px;
   padding-left: 0.5rem;
+  overflow: hidden;
 }
 
 .header-content__times div {
@@ -141,9 +145,11 @@
   .header {
     margin: 4rem 4rem;
   }
+
   .header-image {
     opacity: 0.3;
   }
+
   .header-content__item h3 {
     color: #aaaaaa;
   }
@@ -156,7 +162,7 @@
   }
 
   .header-image {
-    transform: translate(50px, -100px) scale(1);
+    transform: translate(20px, -100px) scale(1);
   }
 }
 
@@ -181,7 +187,8 @@
 
   .header-content__item h3 {
     font-size: 40px;
-    line-height: 30px;
+    left: 330px;
+    top: 45px;
   }
 
   .header-content__buttons {
@@ -238,8 +245,8 @@
 
   .header-content__item h3 {
     font-size: 26px;
-    line-height: 25px;
-    transform: rotate(-90deg) translate(8px, 60px);
+    left: 238px;
+    top: 52px;
   }
 
   .header-content__buttons {
@@ -263,7 +270,6 @@
   }
 
   .header-image {
-    width: 550px;
-    transform: translate(-50px, -250px) scale(0.6);
+    transform: translate(180px, -250px) scale(0.5);
   }
 }

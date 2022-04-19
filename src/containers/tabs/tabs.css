@@ -30,8 +30,10 @@
   background-color: transparent;
 }
 
-.tabs__menu-button:hover {
-  background-color: #fef2f2;
+@media (hover: hover) {
+  .tabs__menu-button:hover {
+    background-color: #fef2f2;
+  }
 }
 
 .tabs__menu-button--active {
