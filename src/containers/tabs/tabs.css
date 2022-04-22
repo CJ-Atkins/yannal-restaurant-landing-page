@@ -30,19 +30,11 @@
   background-color: transparent;
 }
 
-@media (hover: hover) {
-  .tabs__menu-button:hover {
-    background-color: #fef2f2;
-  }
-}
-
 .tabs__menu-button--active {
   background-color: var(--color-accent);
   color: #fff;
-  box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1),
-    0px 64px 46px rgba(234, 0, 37, 0.07), 0px 38px 25px rgba(234, 0, 37, 0.06),
-    0px 20px 13px rgba(234, 0, 37, 0.05), 0px 8px 6px rgba(234, 0, 37, 0.04),
-    0px 2px 3px rgba(234, 0, 37, 0.02);
+  -webkit-box-shadow: 0px 38px 50px 17px rgba(234, 0, 37, 0.1);
+  box-shadow: 0px 38px 50px 17px rgba(234, 0, 37, 0.1);
 }
 
 .tabs__menu-button--active:hover {
@@ -79,10 +71,8 @@
 .tabs__mob-menu-button--active {
   background-color: var(--color-accent);
   color: #fff;
-  box-shadow: 0px 100px 80px rgba(234, 0, 37, 0.1),
-    0px 64px 46px rgba(234, 0, 37, 0.07), 0px 38px 25px rgba(234, 0, 37, 0.06),
-    0px 20px 13px rgba(234, 0, 37, 0.05), 0px 8px 6px rgba(234, 0, 37, 0.04),
-    0px 2px 3px rgba(234, 0, 37, 0.02);
+  -webkit-box-shadow: 0px 38px 50px 17px rgba(234, 0, 37, 0.1);
+  box-shadow: 0px 38px 50px 17px rgba(234, 0, 37, 0.1);
 }
 
 .tabs__mob-menu-button:hover {
